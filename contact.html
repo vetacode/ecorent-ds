@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>ECORent - Hubungi Kami | Rental Mobil Jakarta & Bogor</title>
+    <!-- TailwindCSS + Font Awesome + Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: 'Inter', system-ui, sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .transition-smooth {
+        transition: all 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-4px);
+      }
+      .btn-wa:hover {
+        background-color: #075e54;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="bg-white shadow-md sticky top-0 z-30 border-b border-red-100">
+      <div
+        class="max-w-7xl mx-auto px-5 md:px-8 py-3 flex flex-wrap items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-car-side text-red-600 text-2xl"></i>
+          <span class="font-bold text-xl tracking-tight text-gray-800"
+            >ECORent</span
+          >
+        </div>
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-btn"
+            class="text-gray-700 focus:outline-none text-2xl"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-6 font-medium">
+          <a
+            href="https://carisolusi.biz.id/home"
+            class="text-gray-700 hover:text-red-600"
+            >Home</a
+          >
+          <a
+            href="https://carisolusi.biz.id/about"
+            class="text-gray-700 hover:text-red-600"
+            >About</a
+          >
+          <a
+            href="https://carisolusi.biz.id/gallery"
+            class="text-gray-700 hover:text-red-600"
+            >Gallery</a
+          >
+          <a
+            href="https://carisolusi.biz.id/service"
+            class="text-gray-700 hover:text-red-600"
+            >Service</a
+          >
+          <a
+            href="https://carisolusi.biz.id/contact"
+            class="text-red-600 font-semibold border-b-2 border-red-600 pb-0.5"
+            >Contact</a
+          >
+          <a
+            href="https://carisolusi.biz.id/blog"
+            class="text-gray-700 hover:text-red-600"
+            >Blog</a
+          >
+        </div>
+        <div class="hidden md:block">
+          <a
+            href="https://wa.me/628119950205?text=Halo%20ECORent,%20saya%20ingin%20konsultasi%20sewa%20mobil"
+            target="_blank"
+            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2"
+            ><i class="fab fa-whatsapp"></i> Hubungi Kami</a
+          >
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-red-100 pb-3 px-5 flex flex-col space-y-3 font-medium"
+      >
+        <a
+          href="https://carisolusi.biz.id/home"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Home</a
+        >
+        <a
+          href="https://carisolusi.biz.id/about"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >About</a
+        >
+        <a
+          href="https://carisolusi.biz.id/gallery"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Gallery</a
+        >
+        <a
+          href="https://carisolusi.biz.id/service"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Service</a
+        >
+        <a
+          href="https://carisolusi.biz.id/contact"
+          class="py-2 text-red-600 font-semibold"
+          >Contact</a
+        >
+        <a
+          href="https://carisolusi.biz.id/blog"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Blog</a
+        >
+        <a
+          href="https://wa.me/628119950205"
+          target="_blank"
+          class="bg-red-600 text-white text-center py-2 rounded-full mt-2"
+          ><i class="fab fa-whatsapp mr-1"></i> WhatsApp</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <!-- ==================== HERO SECTION ==================== -->
+      <section
+        class="relative bg-gradient-to-r from-red-800 to-red-900 text-white py-16 md:py-20"
+      >
+        <div class="max-w-7xl mx-auto px-5 text-center">
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+            Hubungi <span class="text-red-200">Kami</span>
+          </h1>
+          <p class="text-lg md:text-xl max-w-2xl mx-auto text-white/90">
+            Senang melayani Anda! Tim ECORent siap membantu kebutuhan rental
+            mobil Anda.
+          </p>
+          <div class="w-24 h-1 bg-white mx-auto rounded-full mt-5"></div>
+        </div>
+      </section>
+
+      <!-- ==================== KONTAK & FORM + MAP ==================== -->
+      <section class="py-16 md:py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="grid lg:grid-cols-2 gap-10">
+            <!-- KOLOM KIRI: Info Kontak & Form Singkat -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+              <h2 class="text-2xl font-bold text-gray-800 mb-2">
+                <i class="fas fa-address-card text-red-600 mr-2"></i> Informasi
+                Kontak
+              </h2>
+              <div class="w-16 h-1 bg-red-600 rounded-full mb-6"></div>
+
+              <!-- Detail Kontak -->
+              <div class="space-y-5">
+                <div class="flex items-start gap-4">
+                  <div class="bg-red-100 p-3 rounded-full">
+                    <i class="fas fa-map-marker-alt text-red-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-800">Alamat Kantor</h3>
+                    <p class="text-gray-600 text-sm md:text-base">
+                      Jl. Alternatif Cibubur Kp, RT.002/RW.016, Cileungsi, Kep.
+                      Cileungsi, Kabupaten Bogor, Jawa Barat 16820
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="bg-red-100 p-3 rounded-full">
+                    <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-800">
+                      WhatsApp (Fast Response)
+                    </h3>
+                    <p class="text-gray-600">
+                      <a
+                        href="https://wa.me/628119950205"
+                        target="_blank"
+                        class="hover:text-red-600"
+                        >+62 811-9950-205</a
+                      >
+                      <span
+                        class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full ml-2"
+                        >24 Jam</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="bg-red-100 p-3 rounded-full">
+                    <i class="fas fa-phone-alt text-red-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-800">Telepon</h3>
+                    <p class="text-gray-600">
+                      <a href="tel:+628119950205" class="hover:text-red-600"
+                        >+62 811-9950-205</a
+                      >
+                      (CS 08.00-22.00)
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="bg-red-100 p-3 rounded-full">
+                    <i class="fas fa-envelope text-red-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-800">Email</h3>
+                    <p class="text-gray-600">
+                      <a
+                        href="mailto:halo@ecorent.co.id"
+                        class="hover:text-red-600"
+                        >halo@ecorent.co.id</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="bg-red-100 p-3 rounded-full">
+                    <i class="fas fa-clock text-red-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-gray-800">Jam Operasional</h3>
+                    <p class="text-gray-600">
+                      Senin - Minggu: 08.00 - 22.00<br /><span class="text-sm"
+                        >Layanan Darurat & WhatsApp: 24/7</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sosial Media Links -->
+              <div class="mt-8 pt-6 border-t border-gray-100">
+                <h3 class="font-semibold text-gray-700 mb-3">
+                  Ikuti Kami di Sosial Media
+                </h3>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="bg-gray-100 hover:bg-red-100 p-3 rounded-full transition"
+                    ><i class="fab fa-instagram text-red-600 text-xl"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="bg-gray-100 hover:bg-red-100 p-3 rounded-full transition"
+                    ><i class="fab fa-facebook text-red-600 text-xl"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="bg-gray-100 hover:bg-red-100 p-3 rounded-full transition"
+                    ><i class="fab fa-twitter text-red-600 text-xl"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="bg-gray-100 hover:bg-red-100 p-3 rounded-full transition"
+                    ><i class="fab fa-tiktok text-red-600 text-xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- KOLOM KANAN: Google Maps & Form Cepat -->
+            <div class="space-y-6">
+              <!-- Google Maps Embed -->
+              <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-red-600 text-white px-6 py-3 font-semibold">
+                  <i class="fas fa-map mr-2"></i> Lokasi Kami
+                </div>
+                <div class="p-2">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.940701387244!2d106.95762057580006!3d-6.401642193589016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699562f6ecad45%3A0x5d8d29d4013f6034!2sE%20C%20O%20PROFESIONAL%20Car%20service!5e0!3m2!1sen!2sid!4v1775571563065!5m2!1sen!2sid"
+                    width="100%"
+                    height="350"
+                    style="border: 0; border-radius: 12px"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+
+              <!-- Form Pertanyaan Cepat (tanpa backend, langsung ke WA) -->
+              <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                  <i class="fas fa-paper-plane text-red-600 mr-2"></i>
+                  Pertanyaan Cepat?
+                </h3>
+                <p class="text-gray-500 text-sm mb-4">
+                  Isi form di bawah, kami akan merespon via WhatsApp dalam < 10
+                  menit.
+                </p>
+                <form
+                  id="quick-contact-form"
+                  action="https://wa.me/628119950205"
+                  method="GET"
+                  target="_blank"
+                >
+                  <input type="hidden" name="text" id="wa-message" value="" />
+                  <div class="mb-4">
+                    <label
+                      class="block text-gray-700 text-sm font-semibold mb-2"
+                      >Nama Anda</label
+                    >
+                    <input
+                      type="text"
+                      id="nama"
+                      class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+                      placeholder="Contoh: Budi Santoso"
+                      required
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label
+                      class="block text-gray-700 text-sm font-semibold mb-2"
+                      >Pertanyaan / Kebutuhan</label
+                    >
+                    <textarea
+                      id="pesan"
+                      rows="3"
+                      class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+                      placeholder="Contoh: Saya ingin sewa Innova untuk 3 hari, dengan driver..."
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 rounded-lg transition flex items-center justify-center gap-2"
+                  >
+                    <i class="fab fa-whatsapp text-xl"></i> Kirim via WhatsApp
+                  </button>
+                </form>
+                <p class="text-xs text-gray-400 mt-3 text-center">
+                  *Data akan dikirim via WhatsApp, kami tidak menyimpan
+                  informasi Anda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== INFO LOKASI & AKSES ==================== -->
+      <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="bg-red-50 rounded-2xl p-6 md:p-8 text-center">
+            <i class="fas fa-car text-red-600 text-3xl mb-3"></i>
+            <h3 class="text-xl font-bold">
+              Mudah Dijangkau dari Jakarta & Sekitarnya
+            </h3>
+            <p class="text-gray-600 max-w-2xl mx-auto mt-2">
+              Kantor kami berada di kawasan Cileungsi, Bogor. Akses cepat dari
+              tol Cibubur dan alternatif Cibubur. Tersedia layanan antar-jemput
+              gratis untuk area Jabodetabek.
+            </p>
+            <a
+              href="https://wa.me/628119950205?text=Saya%20mau%20antar%20jemput%20mobil%20ECORent"
+              target="_blank"
+              class="inline-block mt-5 bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-semibold transition"
+              ><i class="fas fa-route mr-2"></i> Tanya Rute & Antar Jemput</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CTA WHATSAPP ==================== -->
+      <section
+        class="py-12 bg-gradient-to-r from-red-700 to-red-800 text-white text-center"
+      >
+        <div class="max-w-3xl mx-auto px-5">
+          <i class="fab fa-whatsapp text-5xl mb-3 opacity-90"></i>
+          <h2 class="text-2xl md:text-3xl font-bold">Butuh respon cepat?</h2>
+          <p class="text-red-100 mt-2 mb-5">
+            Tim CS kami siap membantu via WhatsApp dalam hitungan menit.
+          </p>
+          <a
+            href="https://wa.me/628119950205?text=Halo%20ECORent,%20saya%20butuh%20info%20sewa%20mobil"
+            target="_blank"
+            class="inline-flex items-center gap-2 bg-white text-red-700 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition text-lg"
+            ><i class="fab fa-whatsapp"></i> Chat Sekarang</a
+          >
+        </div>
+      </section>
+
+      <!-- ==================== FOOTER ==================== -->
+      <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+        <div
+          class="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-car-side text-red-500 text-2xl"></i
+              ><span class="text-white font-bold text-xl">ECORent</span>
+            </div>
+            <p class="text-sm text-gray-400">
+              Solusi rental mobil terbaik di Jakarta & Bogor. Cepat, bersih, dan
+              terpercaya.
+            </p>
+            <div class="flex gap-4 mt-4">
+              <a href="#" class="text-gray-400 hover:text-red-400 text-xl"
+                ><i class="fab fa-instagram"></i></a
+              ><a href="#" class="text-gray-400 hover:text-red-400 text-xl"
+                ><i class="fab fa-facebook"></i></a
+              ><a href="#" class="text-gray-400 hover:text-red-400 text-xl"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-lg mb-3 border-l-4 border-red-500 pl-3"
+            >
+              Tautan
+            </h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://carisolusi.biz.id/home"
+                  class="hover:text-red-400"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://carisolusi.biz.id/about"
+                  class="hover:text-red-400"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://carisolusi.biz.id/service"
+                  class="hover:text-red-400"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://carisolusi.biz.id/contact"
+                  class="hover:text-red-400"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-lg mb-3 border-l-4 border-red-500 pl-3"
+            >
+              Kontak
+            </h4>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center gap-3">
+                <i class="fab fa-whatsapp text-green-400"></i> +62 811-9950-205
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-envelope"></i> halo@ecorent.co.id
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-map-marker-alt"></i> Bogor - Cileungsi
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-lg mb-3 border-l-4 border-red-500 pl-3"
+            >
+              Jam Layanan
+            </h4>
+            <p>Senin - Minggu: 08.00 - 22.00</p>
+            <p class="mt-1 text-sm">CS & Darurat: 24/7</p>
+            <a
+              href="https://wa.me/628119950205"
+              target="_blank"
+              class="inline-block mt-4 bg-red-700 hover:bg-red-600 text-white text-sm px-4 py-2 rounded-lg transition"
+              ><i class="fab fa-whatsapp mr-1"></i> Fast Response</a
+            >
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-xs"
+        >
+          <p>
+            © 2025 ECORent - Rental Mobil Terpercaya. Mudah, Cepat, dan Bersih.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const icon = menuBtn.querySelector('i');
+          if (icon) icon.classList.toggle('fa-times');
+          icon.classList.toggle('fa-bars');
+        });
+      }
+      const mobileLinks = document.querySelectorAll('#mobile-menu a');
+      mobileLinks.forEach((link) =>
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          if (menuBtn) {
+            const icon = menuBtn.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          }
+        }),
+      );
+
+      // Form handling: mengirim data ke WhatsApp
+      const form = document.getElementById('quick-contact-form');
+      const waMessageInput = document.getElementById('wa-message');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const nama = document.getElementById('nama').value.trim();
+        const pesan = document.getElementById('pesan').value.trim();
+
+        if (!nama || !pesan) {
+          alert('Mohon isi nama dan pesan Anda terlebih dahulu.');
+          return;
+        }
+
+        const messageText = `Halo ECORent, saya *${nama}*. %0A%0A${pesan}%0A%0A-- Dari form kontak website --`;
+        waMessageInput.value = messageText;
+
+        // Submit form ke WhatsApp
+        form.submit();
+      });
+    </script>
+  </body>
+</html>

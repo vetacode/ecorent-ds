@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>ECORent - Tentang Kami | Rental Mobil Modern & Terpercaya</title>
+    <!-- TailwindCSS + Font Awesome + Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family:
+          'Inter',
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .transition-smooth {
+        transition: all 0.3s ease;
+      }
+      .hover-scale:hover {
+        transform: scale(1.02);
+      }
+      .bg-pattern-light {
+        background-image: radial-gradient(#fee2e2 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- ==================== NAVBAR (Konsisten dengan Home) ==================== -->
+    <nav class="bg-white shadow-md sticky top-0 z-30 border-b border-red-100">
+      <div
+        class="max-w-7xl mx-auto px-5 md:px-8 py-3 flex flex-wrap items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-car-side text-red-600 text-2xl"></i>
+          <span class="font-bold text-xl tracking-tight text-gray-800"
+            >ECORent</span
+          >
+        </div>
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-btn"
+            class="text-gray-700 focus:outline-none text-2xl"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-6 font-medium">
+          <a
+            href="https://carisolusi.biz.id/home"
+            class="text-gray-700 hover:text-red-600"
+            >Home</a
+          >
+          <a
+            href="https://carisolusi.biz.id/about"
+            class="text-red-600 font-semibold border-b-2 border-red-600 pb-0.5"
+            >About</a
+          >
+          <a
+            href="https://carisolusi.biz.id/gallery"
+            class="text-gray-700 hover:text-red-600"
+            >Gallery</a
+          >
+          <a
+            href="https://carisolusi.biz.id/service"
+            class="text-gray-700 hover:text-red-600"
+            >Service</a
+          >
+          <a
+            href="https://carisolusi.biz.id/contact"
+            class="text-gray-700 hover:text-red-600"
+            >Contact</a
+          >
+          <a
+            href="https://carisolusi.biz.id/blog"
+            class="text-gray-700 hover:text-red-600"
+            >Blog</a
+          >
+        </div>
+        <div class="hidden md:block">
+          <a
+            href="https://wa.me/628119950205?text=Halo%20ECORent%2C%20saya%20ingin%20konsultasi"
+            target="_blank"
+            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2"
+            ><i class="fab fa-whatsapp"></i> Hubungi Kami</a
+          >
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-red-100 pb-3 px-5 flex flex-col space-y-3 font-medium"
+      >
+        <a
+          href="https://carisolusi.biz.id/home"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Home</a
+        >
+        <a
+          href="https://carisolusi.biz.id/about"
+          class="py-2 text-red-600 font-semibold"
+          >About</a
+        >
+        <a
+          href="https://carisolusi.biz.id/gallery"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Gallery</a
+        >
+        <a
+          href="https://carisolusi.biz.id/service"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Service</a
+        >
+        <a
+          href="https://carisolusi.biz.id/contact"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Contact</a
+        >
+        <a
+          href="https://carisolusi.biz.id/blog"
+          class="py-2 text-gray-700 hover:text-red-600"
+          >Blog</a
+        >
+        <a
+          href="https://wa.me/628119950205"
+          target="_blank"
+          class="bg-red-600 text-white text-center py-2 rounded-full mt-2"
+          ><i class="fab fa-whatsapp mr-1"></i> WhatsApp</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <!-- ==================== HERO SECTION ABOUT ==================== -->
+      <section class="relative bg-red-700 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/30 z-0"></div>
+        <div
+          class="relative z-10 max-w-7xl mx-auto px-5 py-20 md:py-28 text-center"
+        >
+          <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+            Tentang <span class="text-red-200">ECORent</span>
+          </h1>
+          <div class="w-24 h-1 bg-white mx-auto rounded-full mb-6"></div>
+          <p class="text-lg md:text-xl max-w-3xl mx-auto text-white/90">
+            Lebih dari sekadar rental mobil. Kami adalah mitra perjalanan Anda
+            yang mengutamakan kenyamanan, transparansi, dan kecepatan.
+          </p>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"
+        ></div>
+      </section>
+
+      <!-- ==================== CERITA KAMI / VISI MISI ==================== -->
+      <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <span class="text-red-600 font-semibold tracking-wide"
+                >Cerita Kami</span
+              >
+              <h2
+                class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-5"
+              >
+                Mengubah Cara Orang <br />
+                <span class="border-b-4 border-red-200"
+                  >Berkendara & Bertualang</span
+                >
+              </h2>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Didirikan pada tahun 2020, ECORent lahir dari keresahan akan
+                layanan rental mobil yang rumit, harga tidak jelas, dan unit
+                yang kurang terawat. Kami memulai dengan 3 unit mobil dan tekad
+                untuk memberikan standar baru:
+                <strong class="text-gray-800"
+                  >mobil bersih, proses cepat, dan harga transparan.</strong
+                >
+              </p>
+              <p class="text-gray-600 leading-relaxed">
+                Hingga kini, ECORent telah melayani lebih dari
+                <span class="font-bold text-red-700">5.200+ pelanggan</span>
+                dengan tingkat kepuasan 4.9/5. Kami terus berkembang dengan
+                armada terbaru dan layanan 24/7.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-5">
+                <div>
+                  <span class="block text-2xl font-bold text-red-700"
+                    >5.200+</span
+                  ><span class="text-gray-500 text-sm">Pelanggan Puas</span>
+                </div>
+                <div>
+                  <span class="block text-2xl font-bold text-red-700">98%</span
+                  ><span class="text-gray-500 text-sm">Ulasan Positif</span>
+                </div>
+                <div>
+                  <span class="block text-2xl font-bold text-red-700">25+</span
+                  ><span class="text-gray-500 text-sm">Armada Modern</span>
+                </div>
+              </div>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src="https://images.unsplash.com/photo-1553729784-e91953a042a2?w=800&q=80"
+                alt="Tim ECORent dan mobil bersih"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm p-3 rounded-lg shadow-md"
+              >
+                <i class="fas fa-quote-left text-red-500 mr-2"></i>
+                <span class="text-sm font-medium"
+                  >"Kepercayaan adalah fondasi kami"</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== NILAI KAMI (VALUES) ==================== -->
+      <section class="py-16 bg-red-50 bg-pattern-light">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="text-center mb-12">
+            <span class="text-red-600 font-semibold">Nilai Inti</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2">
+              Prinsip yang Kami Pegang Teguh
+            </h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto mt-3 rounded-full"></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-white p-6 rounded-xl shadow-md text-center border border-red-100 hover:shadow-lg transition"
+            >
+              <div
+                class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-hand-sparkles text-red-700 text-2xl"></i>
+              </div>
+              <h3 class="font-bold text-xl">Unit Super Bersih</h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Sterilisasi total setiap selesai sewa, wangi & siap pakai
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-md text-center border border-red-100 hover:shadow-lg transition"
+            >
+              <div
+                class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-clock text-red-700 text-2xl"></i>
+              </div>
+              <h3 class="font-bold text-xl">Proses Cepat</h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Booking & konfirmasi < 15 menit, antar mobil 24 jam
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-md text-center border border-red-100 hover:shadow-lg transition"
+            >
+              <div
+                class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-receipt text-red-700 text-2xl"></i>
+              </div>
+              <h3 class="font-bold text-xl">Harga Transparan</h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Tanpa biaya tersembunyi, rincian lengkap di awal
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-md text-center border border-red-100 hover:shadow-lg transition"
+            >
+              <div
+                class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-headset text-red-700 text-2xl"></i>
+              </div>
+              <h3 class="font-bold text-xl">Layanan 24/7</h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Dukungan darurat, bantuan di jalan cepat tanggap
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TIM KAMI (SEDERHANA) ==================== -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold">
+              Dibalik Layanan <span class="text-red-600">Terbaik</span>
+            </h2>
+            <p class="text-gray-500 mt-2">
+              Profesional muda yang berdedikasi pada kenyamanan Anda
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div
+                class="w-40 h-40 rounded-full bg-red-100 mx-auto flex items-center justify-center text-5xl text-red-700"
+              >
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3 class="font-bold text-xl mt-4">Andi Wijaya</h3>
+              <p class="text-red-600">Founder & CEO</p>
+              <p class="text-sm text-gray-500 mt-1">
+                10+ tahun pengalaman otomotif
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-40 h-40 rounded-full bg-red-100 mx-auto flex items-center justify-center text-5xl text-red-700"
+              >
+                <i class="fas fa-user-check"></i>
+              </div>
+              <h3 class="font-bold text-xl mt-4">Sari Lestari</h3>
+              <p class="text-red-600">Operational Manager</p>
+              <p class="text-sm text-gray-500 mt-1">
+                Memastikan setiap unit prima
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-40 h-40 rounded-full bg-red-100 mx-auto flex items-center justify-center text-5xl text-red-700"
+              >
+                <i class="fas fa-headset"></i>
+              </div>
+              <h3 class="font-bold text-xl mt-4">Budi Santoso</h3>
+              <p class="text-red-600">Customer Hero</p>
+              <p class="text-sm text-gray-500 mt-1">
+                Tim support 24/7 yang responsif
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TESTIMONI PILIHAN ==================== -->
+      <section class="py-16 bg-red-50">
+        <div class="max-w-6xl mx-auto px-5">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold">
+              Apa Kata <span class="text-red-600">Mereka?</span>
+            </h2>
+            <div class="w-20 h-1 bg-red-600 mx-auto mt-2"></div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <div class="flex text-yellow-400 mb-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="italic text-gray-600">
+                "Mobil sangat bersih, AC dingin, dan proses booking cepat. Harga
+                juga sesuai yang diinfo. Langganan!"
+              </p>
+              <div class="mt-4 font-semibold">
+                — Dewi, Pelanggan Sewa Bulanan
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <div class="flex text-yellow-400 mb-2">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="italic text-gray-600">
+                "Driver ramah dan tau rute. Armada terawat, terasa seperti punya
+                mobil pribadi. Recommended!"
+              </p>
+              <div class="mt-4 font-semibold">— Rizky, Perjalanan Dinas</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CTA PENUTUP ==================== -->
+      <section
+        class="py-16 bg-gradient-to-r from-red-800 to-red-900 text-white text-center"
+      >
+        <div class="max-w-3xl mx-auto px-5">
+          <h2 class="text-3xl font-bold mb-3">
+            Siap Berpergian dengan ECORent?
+          </h2>
+          <p class="text-red-100 mb-6">
+            Booking sekarang dan rasakan pengalaman rental mobil modern.
+          </p>
+          <a
+            href="https://wa.me/628119950205?text=Saya%20tertarik%20sewa%20mobil%20ECORent"
+            target="_blank"
+            class="inline-flex items-center gap-2 bg-white text-red-700 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition"
+            ><i class="fab fa-whatsapp text-xl"></i> Booking via WhatsApp</a
+          >
+        </div>
+      </section>
+
+      <!-- ==================== FOOTER ==================== -->
+      <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+        <div
+          class="max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fas fa-car-side text-red-500 text-2xl"></i
+              ><span class="text-white font-bold text-xl">ECORent</span>
+            </div>
+            <p class="text-sm text-gray-400">
+              Solusi rental mobil cepat, bersih, dan transparan.
+              #MobilBersihHargaJelas
+            </p>
+            <div class="flex gap-4 mt-4">
+              <a href="#" class="text-gray-400 hover:text-red-400 text-xl"
+                ><i class="fab fa-instagram"></i></a
+              ><a href="#" class="text-gray-400 hover:text-red-400 text-xl"
+                ><i class="fab fa-facebook"></i></a
+              ><a href="#" class="text-gray-400 hover:text-red-400 text-xl"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-lg mb-3 border-l-4 border-red-500 pl-3"
+            >
+              Tautan
+            </h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://carisolusi.biz.id/home"
+                  class="hover:text-red-400"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://carisolusi.biz.id/about"
+                  class="hover:text-red-400"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://carisolusi.biz.id/service"
+                  class="hover:text-red-400"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://carisolusi.biz.id/contact"
+                  class="hover:text-red-400"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-lg mb-3 border-l-4 border-red-500 pl-3"
+            >
+              Kontak
+            </h4>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center gap-3">
+                <i class="fab fa-whatsapp text-green-400"></i> +62 811-995-0205
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-envelope"></i> halo@ecorent.co.id
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-map-marker-alt"></i> Jakarta & sekitarnya
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-white font-semibold text-lg mb-3 border-l-4 border-red-500 pl-3"
+            >
+              Jam Operasional
+            </h4>
+            <p>Senin - Minggu: 08.00 - 22.00</p>
+            <p class="mt-1 text-sm">CS 24/7 via WhatsApp</p>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-xs"
+        >
+          <p>
+            © 2025 ECORent - Rental Mobil Terpercaya. Merah Putih untuk
+            Indonesia.
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Mobile menu toggle (sama seperti home)
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const icon = menuBtn.querySelector('i');
+          if (icon) icon.classList.toggle('fa-times');
+          icon.classList.toggle('fa-bars');
+        });
+      }
+      const mobileLinks = document.querySelectorAll('#mobile-menu a');
+      mobileLinks.forEach((link) =>
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          if (menuBtn) {
+            const icon = menuBtn.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          }
+        }),
+      );
+    </script>
+  </body>
+</html>
