@@ -52,14 +52,31 @@
     <!-- ==================== NAVBAR (Konsisten dengan Brand) ==================== -->
     <nav class="bg-white shadow-md sticky top-0 z-30 border-b border-red-100">
       <div
-        class="max-w-7xl mx-auto px-5 md:px-8 py-3 flex flex-wrap items-center justify-between"
+        class="max-w-7xl mx-auto px-5 md:px-8 py-0.5 md:py-1 flex flex-wrap items-center justify-between"
       >
-        <div class="flex items-center gap-2">
-          <i class="fas fa-car-side text-red-600 text-2xl"></i>
+        <!-- Logo Brand -->
+        <div class="flex items-center gap-3">
+          <!-- <i class="fas fa-car-side text-red-600 text-2xl"></i> -->
+          <div
+            class="w-20 h-auto rounded-full mx-auto flex items-center justify-center text-5xl text-red-700 overflow-hidden"
+          >
+            <!-- <i class="fas fa-headset"></i> -->
+            <img
+              style="border-radius: 0%"
+              src="https://carisolusi.biz.id/gambarbebas/20260414-091430_ecorent.webp"
+              alt="logo"
+            />
+          </div>
           <span class="font-bold text-xl tracking-tight text-gray-800"
             >ECORent</span
           >
+          <span
+            class="text-xs font-semibold bg-red-50 text-red-700 px-2 py-0.5 rounded-full ml-1 hidden sm:inline-block"
+            >Premium</span
+          >
         </div>
+
+        <!-- Mobile Menu Toggle -->
         <div class="md:hidden">
           <button
             id="mobile-menu-btn"
@@ -68,54 +85,60 @@
             <i class="fas fa-bars"></i>
           </button>
         </div>
+
+        <!-- Desktop Navigation Links (semua link sesuai permintaan) -->
         <div class="hidden md:flex space-x-6 font-medium">
           <a
             href="https://carisolusi.biz.id/home"
-            class="text-gray-700 hover:text-red-600"
+            class="text-gray-700 hover:text-red-600 transition"
             >Home</a
           >
           <a
             href="https://carisolusi.biz.id/about"
-            class="text-gray-700 hover:text-red-600"
+            class="text-gray-700 hover:text-red-600 transition"
             >About</a
           >
           <a
             href="https://carisolusi.biz.id/gallery"
-            class="text-red-600 font-semibold border-b-2 border-red-600 pb-0.5"
+            class="text-gray-700 hover:text-red-600 transition"
             >Gallery</a
           >
           <a
             href="https://carisolusi.biz.id/service"
-            class="text-gray-700 hover:text-red-600"
+            class="text-gray-700 hover:text-red-600 transition"
             >Service</a
           >
           <a
             href="https://carisolusi.biz.id/contact"
-            class="text-gray-700 hover:text-red-600"
+            class="text-gray-700 hover:text-red-600 transition"
             >Contact</a
           >
           <a
             href="https://carisolusi.biz.id/blog"
-            class="text-gray-700 hover:text-red-600"
+            class="text-gray-700 hover:text-red-600 transition"
             >Blog</a
           >
         </div>
+
+        <!-- CTA kecil desktop -->
         <div class="hidden md:block">
           <a
-            href="https://wa.me/628119950205?text=Halo%20ECORent%2C%20saya%20melihat%20galeri%20dan%20tertarik%20sewa%20mobil"
+            href="https://wa.me/628119950205?text=Halo%20ECORent%2C%20saya%20ingin%20booking%20mobil"
             target="_blank"
-            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2"
-            ><i class="fab fa-whatsapp"></i> Hubungi Kami</a
+            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 transition"
+            ><i class="fab fa-whatsapp"></i> Booking Now</a
           >
         </div>
       </div>
+
+      <!-- Mobile Menu Panel (hidden by default) -->
       <div
         id="mobile-menu"
         class="hidden md:hidden bg-white border-t border-red-100 pb-3 px-5 flex flex-col space-y-3 font-medium"
       >
         <a
           href="https://carisolusi.biz.id/home"
-          class="py-2 text-gray-700 hover:text-red-600"
+          class="py-2 text-gray-700 hover:text-red-600 border-b border-gray-100"
           >Home</a
         >
         <a
@@ -125,7 +148,7 @@
         >
         <a
           href="https://carisolusi.biz.id/gallery"
-          class="py-2 text-red-600 font-semibold"
+          class="py-2 text-gray-700 hover:text-red-600"
           >Gallery</a
         >
         <a
@@ -144,14 +167,13 @@
           >Blog</a
         >
         <a
-          href="https://wa.me/628119950205"
+          href="https://wa.me/628119950205?text=Booking%20Mobil%20ECORent"
           target="_blank"
           class="bg-red-600 text-white text-center py-2 rounded-full mt-2"
-          ><i class="fab fa-whatsapp mr-1"></i> WhatsApp</a
+          ><i class="fab fa-whatsapp mr-1"></i> WhatsApp Booking</a
         >
       </div>
     </nav>
-
     <main>
       <!-- ==================== HERO GALERI ==================== -->
       <section
